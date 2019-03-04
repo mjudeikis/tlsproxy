@@ -1,0 +1,11 @@
+loglevel: Debug
+listen: :8448
+insecure: true
+ca: /etc/etcd/ca.crt
+cert: /etc/etcd/peer.crt
+key: /etc/etcd/peer.key
+reencrypt: true
+servingkey: /var/serving-cert/tls.key
+servingcert: /var/serving-cert/tls.crt
+whitelist: /metrics*
+hostname: https://master-000000:2379
